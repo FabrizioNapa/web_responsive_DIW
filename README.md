@@ -60,3 +60,4 @@ No necesita instalación ni servidor.
 ## Licencia
 
 Proyecto con fines educativos. Puedes usarlo y modificarlo libremente.
+git
