@@ -1,1 +1,5 @@
-/* Aquí el diseño de la página
+body {
+    font-family: Arial, sans-serif;
+    background-color: #020a2e;
+    color: white;
+}
