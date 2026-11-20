@@ -10,27 +10,27 @@
 
 <body>
 
-    <header>
-        <h1 class="logo">DIWBANK</h1>
-        
-        <nav>
+    <header class="cabecera">
+        <a href="#" class="logo">DIWBANK</a>
+        <!-- id necesario para aria-controls del botón; el JS añadirá/quitará la clase nav--abierto -->
+        <nav id="menu-lista" class="nav" aria-label="Principal">
             <a href="#">Particulares</a>
             <a href="#">Empresas</a>
             <a href="#">Autónomos</a>
-        <!--Añadido botón de navegación--> 
-        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="menu-lista">
-             ☰
-        </button>
-</nav>
         </nav>
-    <!-- Nuestra página no tiene una barra de busqueda -->
-        <a href="#" class="boton boton-cliente">Hazte cliente</a>
+
+        <a href="#" class="btncliente">Hazte cliente</a>
+
+        <!-- Fuera del nav, para que no desaparezca cuando el nav está oculto -->
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="menu-lista"
+            aria-label="Abrir menú">☰</button>
     </header>
 
     <main>
         <section class="hero">
             <div class="hero-texto">
-                <h2>Banca y mucho más</h2>
+                <!-- Único h1 de la página -->
+                <h1>Banca y mucho más</h1>
                 <p>Tanto si estás en casa como de viaje, deja que DIWBANK supere tus expectativas bancarias. Regístrate
                     con un toque.</p>
                 <a href="#" class="boton">Hazte de DIWBANK</a>
@@ -43,46 +43,58 @@
             <p>Ajustándose a tus necesidades</p>
 
             <div class="tarjetas">
-                <article>
+                <article class="tarjeta">
                     <h3>Cuenta bancaria</h3>
-                    <p class="icono">
-                        <img src="images/bank.png" alt="Icono de banco">
-                    </p>
+                    <div class="icono">
+                        <!-- Icono decorativo: el título ya describe la tarjeta -->
+                        <img src="images/bank.png" alt="">
+                    </div>
                     <p>Cumple tus objetivos con la cuenta de ahorro. Traspasa tus ahorros a tu cuenta asociada de
                         DIWBANK sin coste cuando quieras.</p>
                 </article>
 
-                <article>
+                <article class="tarjeta">
                     <h3>Tarjeta Débito</h3>
-                    <p class="icono">
-                        <img src="images/card.png">
-                    </p>
+                    <div class="icono">
+                        <img src="images/card.png" alt="Tarjeta de débito VISA negra">
+                    </div>
                     <p>Consigue puntos con cada compra que hagas con una de nuestras tarjetas de débito y canjéalos por
-                        millas aéreas. Sujeto a Términos y Condiciones.</p>
+                        millas aéreas y mucho más. Sujeto a Términos y Condiciones.</p>
                 </article>
 
-                <article>
+                <article class="tarjeta">
                     <h3>Inversiones</h3>
-                    <p class="icono">
-                        <img src="images/Investments.png">
-                    </p>
+                    <div class="icono">
+                        <img src="images/Investments.png" alt="">
+                    </div>
                     <p>Empieza a construir tu patrimonio invirtiendo en 6000+ acciones y ETF, todo en una sola app.
-                        Capital sujeto a riesgo.</p>
+                        Capital sujeto a riesgo. Se aplican Términos y Condiciones y comisiones de trading.</p>
                 </article>
             </div>
         </section>
     </main>
 
     <footer>
-        <p class="logo">DIWBANK</p>
-        <nav>
+        <a href="#" class="logo">DIWBANK</a>
+
+        <nav aria-label="Pie de página">
             <a href="#">Particulares</a>
             <a href="#">Empresas</a>
             <a href="#">Autónomos</a>
         </nav>
-        <p>Instagram · Facebook · X</p>
+
+        <!-- Cuando tengas los iconos: <a href="#"><img src="images/instagram.png" alt="Instagram"></a> -->
+        <div class="redes">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">X</a>
+        </div>
     </footer>
 
+    <!-- Para cuando hagas el JS del menú:
+    <script src="js/menu.js"></script> -->
+
 </body>
+<script src="js/script.js"></script>
 
 </html>
