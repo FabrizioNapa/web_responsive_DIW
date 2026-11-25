@@ -48,7 +48,7 @@ No necesita instalación ni servidor.
 
 ## Autor
 
-**Fabrizio Napa** 
+**Fabrizio Napa**-
 **Julio Cesar**
 — Módulo de Diseño de Interfaces Web.
 
