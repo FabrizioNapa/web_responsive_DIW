@@ -2,13 +2,6 @@
 
 Proyecto de **Diseño de Interfaces Web (DIW)**: una página web estática y adaptable a cualquier dispositivo (móvil, tablet y escritorio), construida con HTML5 y CSS3.
 
-## Vista previa
-
-> Añade aquí una captura de pantalla de tu página:
->
-> `![Vista previa](img/captura.png)`
-
-Demo en línea (si usas GitHub Pages): `https://TU_USUARIO.github.io/NOMBRE_REPO/`
 
 ## Objetivos
 
@@ -33,6 +26,8 @@ NOMBRE_REPO/
 ├── css/
 │   └── styles.css    # Hoja de estilos
 ├── img/              # Imágenes
+├── js/
+│    └── script.js    #Script de la web
 └── README.md
 ```
 
