@@ -1,6 +1,6 @@
-// =========================================
+
 // 1. VARIABLES (ahora con $ en vez de --)
-// =========================================
+
 $color-fondo: #050A30;
 $color-superficie: #2B6089;
 $color-accion: #CDE8FF;
@@ -22,9 +22,7 @@ $breakpoints: (
   pc: 1024px
 );
 
-// =========================================
-// 2. MIXINS
-// =========================================
+
 // Media query reutilizable: @include mq(tablet) { ... }
 @mixin mq($nombre) {
   @media (min-width: map-get($breakpoints, $nombre)) {
@@ -47,9 +45,9 @@ $breakpoints: (
   }
 }
 
-// =========================================
+
 // 3. RESET Y BASE
-// =========================================
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -74,9 +72,9 @@ img {
   height: auto;
 }
 
-// =========================================
+
 // 4. COMPONENTES REUTILIZABLES
-// =========================================
+
 .logo {
   font-weight: 700;
   font-size: 1.25rem;
@@ -89,9 +87,9 @@ img {
   @include boton-base;
 }
 
-// =========================================
+
 // 5. CABECERA
-// =========================================
+
 .cabecera {
   display: flex;
   align-items: center;
@@ -150,9 +148,9 @@ img {
   cursor: pointer;
 }
 
-// =========================================
+
 // 6. HERO
-// =========================================
+
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -184,9 +182,9 @@ img {
   }
 }
 
-// =========================================
+
 // 7. PRODUCTOS
-// =========================================
+
 .productos {
   padding: ($esp * 5) ($esp * 3);
   text-align: center;
@@ -264,9 +262,9 @@ img {
   }
 }
 
-// =========================================
+
 // 8. FOOTER
-// =========================================
+
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -284,6 +282,3 @@ footer {
     gap: $esp * 2;
   }
 }
-
-// Nota: .redes estaba fuera de footer en tu CSS original ("footer nav, .redes").
-// Aquí queda anidado, por lo que ahora solo afecta a .redes dentro del footer.
